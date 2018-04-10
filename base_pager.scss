@@ -1,0 +1,78 @@
+@import 'base';
+.mod_pages{
+    @include clearfix;
+    width: 100%;
+    padding-bottom:6px;
+
+    .pagelink {
+        float: right;
+        padding: 0;
+        margin:10px 0;
+        font-size: 14px;
+
+        a,
+        strong,
+        .pager_jump {
+            position: relative;
+            float: left;
+            padding: 6px 12px;
+            text-decoration: none;
+            color: #428bca;
+            border: 1px solid #ddd;
+            margin-left: -1px;
+        }
+
+        strong{
+            font-weight: 400;
+            color: #999999;
+        }
+
+        a:hover {
+            color: #2A6496;
+            background-color: #EEEEEE;
+            border-color: #DDDDDD;
+        }
+
+        .cur{
+            z-index: 2;
+            color: #FFFFFF;
+            background-color: #428BCA;
+            border-color: #428BCA;
+            cursor: default;
+        }
+
+        .index {
+            border-radius:3px 0 0 3px;
+        }
+
+        .last {
+            border-radius:0 3px 3px 0;
+        }
+
+        .pager_jump {
+            padding: 0 12px;
+            height: 31px;
+            line-height: 31px;
+
+            input {
+                text-align: center;
+                border: 1px solid #DDDDDD;
+                background-color: #FFFFFF;
+                width: 30px;
+                height: 20px;
+                vertical-align: top;
+                margin-top: 5px;
+                outline: none;
+            }
+        }
+
+        .disabled,
+        .disabled:hover,
+        .disabled:focus {
+            color: #999999;
+            background-color: #FFFFFF;
+            border-color: #DDDDDD;
+            cursor: not-allowed;
+        }
+    }
+}
